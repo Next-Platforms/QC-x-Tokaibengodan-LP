@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Title</title>
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Button Component Styles -->
+    <link rel="stylesheet" href="assets/css/components/button.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              1500: { max: "1500px" },
+              1450: { max: "1450px" },
+              1400: { max: "1400px" },
+              1350: { max: "1350px" },
+              1300: { max: "1300px" },
+              1250: { max: "1250px" },
+              1200: { max: "1200px" },
+              1150: { max: "1150px" },
+              1100: { max: "1100px" },
+              1050: { max: "1050px" },
+              1000: { max: "1000px" },
+              950: { max: "950px" },
+              900: { max: "900px" },
+              850: { max: "850px" },
+              800: { max: "800px" },
+              750: { max: "750px" },
+              700: { max: "700px" },
+              650: { max: "650px" },
+              600: { max: "600px" },
+              550: { max: "550px" },
+              500: { max: "500px" },
+              450: { max: "450px" },
+              400: { max: "400px" },
+              350: { max: "350px" },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main>
+      <section class="bg-[#f3eddd] flex relative overflow-hidden">
+        <div class="h-[20rem] flex-center text-center wrapper z-[2]">
+          <h1 class="font-bold text-[4.8rem]">送信内容の確認</h1>
+        </div>
+        <img
+          src="assets/images/buildings.svg"
+          alt="Buildings"
+          class="absolute bottom-0 left-0 w-full z-[1] 800:hidden"
+        />
+        <img
+          src="assets/images/small-buildings.svg"
+          alt="Buildings"
+          class="absolute bottom-0 left-[50%] translate-x-[-50%] w-[50rem] z-[1] hidden 800:block"
+        />
+      </section>
+      <section class="pt-[4rem] flex flex-col">
+        <div class="wrapper flex flex-col gap-[4rem]">
+          <div
+            class="w-[80rem] mx-auto flex flex-col border-[2px] border-[#f3eddd]"
+          >
+            <div class="flex border-b-[2px] border-[#f3eddd]">
+              <div
+                class="bg-[#f8f5ee] w-[20rem] font-bold p-[1rem] border-r-[2px] border-[#f3eddd]"
+              >
+                お名前
+              </div>
+              <div class="flex-1 p-[1rem]" id="お名前"></div>
+            </div>
+            <div class="flex border-b-[2px] border-[#f3eddd]">
+              <div
+                class="bg-[#f8f5ee] w-[20rem] font-bold p-[1rem] border-r-[2px] border-[#f3eddd]"
+              >
+                ふりがな
+              </div>
+              <div class="flex-1 p-[1rem]" id="ふりがな"></div>
+            </div>
+            <div class="flex border-b-[2px] border-[#f3eddd]">
+              <div
+                class="bg-[#f8f5ee] w-[20rem] font-bold p-[1rem] border-r-[2px] border-[#f3eddd]"
+              >
+                電話番号
+              </div>
+              <div class="flex-1 p-[1rem]" id="電話番号"></div>
+            </div>
+            <div class="flex border-b-[2px] border-[#f3eddd]">
+              <div
+                class="bg-[#f8f5ee] w-[20rem] font-bold p-[1rem] border-r-[2px] border-[#f3eddd]"
+              >
+                メールアドレス
+              </div>
+              <div class="flex-1 p-[1rem]" id="メールアドレス"></div>
+            </div>
+            <div class="flex border-b-[2px] border-[#f3eddd]">
+              <div
+                class="bg-[#f8f5ee] w-[20rem] font-bold p-[1rem] border-r-[2px] border-[#f3eddd]"
+              >
+                ご病気
+              </div>
+              <div class="flex-1 p-[1rem]" id="ご病気"></div>
+            </div>
+            <div class="flex border-b-[2px] border-[#f3eddd]">
+              <div
+                class="bg-[#f8f5ee] w-[20rem] font-bold p-[1rem] border-r-[2px] border-[#f3eddd]"
+              >
+                行政認定
+              </div>
+              <div class="flex-1 p-[1rem]" id="行政認定"></div>
+            </div>
+            <div class="flex">
+              <div
+                class="bg-[#f8f5ee] w-[20rem] font-bold p-[1rem] border-r-[2px] border-[#f3eddd]"
+              >
+                ご相談内容
+              </div>
+              <div class="flex-1 p-[1rem]" id="ご相談内容"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center justify-center gap-[4rem]">
+            <a href="/index.html#contact-form">
+              <button
+                class="bg-[#bfbfbe] text-white font-bold rounded-[5px] px-[4rem] py-[1rem]"
+              >
+                内容を修正する
+              </button>
+            </a>
+            <form id="confirmation-form">
+              <button
+                type="submit"
+                class="bg-[#76b538] text-white font-bold rounded-[5px] px-[4rem] py-[1rem]"
+              >
+                この内容で確認する
+              </button>
+            </form>
+          </div>
+        </div>
+        <img
+          src="assets/images/buildings.png"
+          alt="Buildings"
+          class="w-auto mx-auto 900:hidden mt-[4rem]"
+        />
+        <img
+          src="assets/images/small-buildings.png"
+          alt="Buildings"
+          class="w-auto mx-auto hidden 900:block mt-[4rem]"
+        />
+      </section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <!-- Main Script -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Load Components -->
+    <script>
+      // Fetch and inject header component
+      fetch("./components/header.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      // Fetch and inject footer component
+      fetch("./components/footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Title</title>
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Button Component Styles -->
+    <link rel="stylesheet" href="assets/css/components/button.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              1500: { max: "1500px" },
+              1450: { max: "1450px" },
+              1400: { max: "1400px" },
+              1350: { max: "1350px" },
+              1300: { max: "1300px" },
+              1250: { max: "1250px" },
+              1200: { max: "1200px" },
+              1150: { max: "1150px" },
+              1100: { max: "1100px" },
+              1050: { max: "1050px" },
+              1000: { max: "1000px" },
+              950: { max: "950px" },
+              900: { max: "900px" },
+              850: { max: "850px" },
+              800: { max: "800px" },
+              750: { max: "750px" },
+              700: { max: "700px" },
+              650: { max: "650px" },
+              600: { max: "600px" },
+              550: { max: "550px" },
+              500: { max: "500px" },
+              450: { max: "450px" },
+              400: { max: "400px" },
+              350: { max: "350px" },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main>
+      <section class="bg-[#f3eddd] flex relative overflow-hidden">
+        <div class="h-[20rem] flex-center text-center wrapper z-[2]">
+          <h1 class="font-bold text-[4.8rem]">送信完了</h1>
+        </div>
+        <img
+          src="assets/images/buildings.svg"
+          alt="Buildings"
+          class="absolute bottom-0 left-0 w-full z-[1] 800:hidden"
+        />
+        <img
+          src="assets/images/small-buildings.svg"
+          alt="Buildings"
+          class="absolute bottom-0 left-[50%] translate-x-[-50%] w-[50rem] z-[1] hidden 800:block"
+        />
+      </section>
+      <section class="pt-[4rem] flex flex-col">
+        <div class="wrapper flex flex-col text-center gap-[4rem]">
+          <h2 class="text-[2.6rem] font-bold">
+            お問い合わせありがとうございます
+          </h2>
+          <div>
+            <h3>3営業日以内に弊社よりお返事させていただきます。</h3>
+            <h3>
+              返答がない場合は大変お手数ですがお電話（050-3096-6400）にてお問い合わせください。
+            </h3>
+          </div>
+          <a href="/index.html">
+            <button
+              type="button"
+              class="mx-auto bg-[#f8f5ee] border-[2px] border-[#e58333] text-[#e58333] font-bold rounded-[5px] px-[4rem] py-[1rem]"
+            >
+              トップページへ戻る
+            </button>
+          </a>
+        </div>
+        <img
+          src="assets/images/buildings.png"
+          alt="Buildings"
+          class="w-auto mx-auto 900:hidden mt-[4rem]"
+        />
+        <img
+          src="assets/images/small-buildings.png"
+          alt="Buildings"
+          class="w-auto mx-auto hidden 900:block mt-[4rem]"
+        />
+      </section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <!-- Main Script -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Load Components -->
+    <script>
+      // Fetch and inject header component
+      fetch("./components/header.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      // Fetch and inject footer component
+      fetch("./components/footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+  </body>
+</html>

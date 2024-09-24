@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Title</title>
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Button Component Styles -->
+    <link rel="stylesheet" href="assets/css/components/button.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              1500: { max: "1500px" },
+              1450: { max: "1450px" },
+              1400: { max: "1400px" },
+              1350: { max: "1350px" },
+              1300: { max: "1300px" },
+              1250: { max: "1250px" },
+              1200: { max: "1200px" },
+              1150: { max: "1150px" },
+              1100: { max: "1100px" },
+              1050: { max: "1050px" },
+              1000: { max: "1000px" },
+              950: { max: "950px" },
+              900: { max: "900px" },
+              850: { max: "850px" },
+              800: { max: "800px" },
+              750: { max: "750px" },
+              700: { max: "700px" },
+              650: { max: "650px" },
+              600: { max: "600px" },
+              550: { max: "550px" },
+              500: { max: "500px" },
+              450: { max: "450px" },
+              400: { max: "400px" },
+              350: { max: "350px" },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Nav Component -->
+    <div id="nav"></div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero_section">
+        <div class="wrapper">
+          <div class="hero_section_1">
+            <img
+              src="assets/images/hero-map.png"
+              alt="Map"
+              style="position: absolute; z-index: 1; top: 0; left: 0"
+            />
+            <div class="line_1">
+              <span>愛知県</span>
+              <span>・</span>
+              <span>岐阜県</span>
+              <span>・</span>
+              <span>三重県</span>
+              <span>
+                にお住まいの
+                <img src="assets/images/hero-arrow-up.png" alt="Arrow Up" />
+              </span>
+              <span>アスベスト</span>
+              <span>や</span>
+              <span>粉じん</span>
+              <span>による</span>
+            </div>
+            <div class="line_2">
+              <span class="text-stroke">健康被害にあった方</span>
+              <span>および</span>
+              <span class="text-stroke">そのご遺族の皆さま</span>
+            </div>
+            <img
+              src="assets/images/hero-arrow-down.png"
+              alt="Arrow Up"
+              style="width: 30rem; margin: 0 auto"
+            />
+          </div>
+          <div class="hero_section_2">
+            <div class="line_1">
+              <div>
+                <span>国から最大</span>
+                <span>1,300</span>
+                <span>万円</span>
+                <span class="yellow-marker-large" />
+              </div>
+              <span class="hero_section_2__line_1__last_span">
+                の給付金が得られ、
+              </span>
+            </div>
+            <div class="line_2">
+              <span>企業</span>
+              <span>からも賠償金を</span>
+              <span>受け取れる</span>
+              <span
+                >可能性があります。
+                <img
+                  src="assets/images/hero-wave-border.png"
+                  alt="Wave"
+                  style="
+                    position: absolute;
+                    bottom: -15%;
+                    left: 0;
+                    right: 0;
+                    width: 92%;
+                  "
+                />
+              </span>
+            </div>
+            <div class="line_3">
+              <span>当弁護団は企業に対する</span>
+            </div>
+            <div class="line_4">
+              <div>
+                <span>損害賠償請求</span>
+                <span class="yellow-marker-large" />
+              </div>
+              <span>にも積極的に</span>
+              <span>取り組んでいます。</span>
+            </div>
+          </div>
+          <div class="hero_section_3">
+            <div>
+              <span>初回のご相談</span>
+              <span class="text-stroke-no-shadow">無料</span>
+            </div>
+            <div>
+              <span class="text-stroke-no-shadow">工場型</span>
+              <span class="text-stroke-no-shadow">建設型</span>
+              <span>どちらも対応</span>
+            </div>
+            <img src="assets/images/hero-family.png" alt="Family" />
+            <div>
+              <span>東海エリアの</span>
+              <span class="text-stroke-no-shadow">勝訴・和解</span>
+              <span>実績あり</span>
+            </div>
+            <div>
+              <span class="text-stroke-no-shadow">24時間</span>
+              <span class="text-stroke-no-shadow">365日</span>
+              <span>ご相談受付中</span>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div>
+            <span>初回のご相談</span>
+            <span class="text-stroke-no-shadow">無料</span>
+          </div>
+          <div>
+            <span class="text-stroke-no-shadow">工場型</span>
+            <span class="text-stroke-no-shadow">建設型</span>
+            <span>どちらも対応</span>
+          </div>
+          <div>
+            <span>東海エリアの</span>
+            <span class="text-stroke-no-shadow">勝訴・和解</span>
+            <span>実績あり</span>
+          </div>
+          <div>
+            <span class="text-stroke-no-shadow">24時間</span>
+            <span class="text-stroke-no-shadow">365日</span>
+            <span>ご相談受付中</span>
+          </div>
+        </div>
+        <div class="wrapper">
+          <b>私たちは、アスベストやじん肺による</b>
+          <div>
+            <span>健康被害者・ご遺族を救済する弁護団</span>
+            <span>です</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call Section -->
+      <section
+        class="hidden 1000:flex bg-[#f8f7f2] border-y-2 border-[#fabf3d] py-[2rem]"
+      >
+        <div
+          class="wrapper flex flex-col items-center justify-center text-center"
+        >
+          <span class="text-[2.5rem] text-[#e58333]">相談料は無料！</span>
+          <span class="text-[2.5rem] text-[#e58333]">
+            お気軽にお問い合わせください
+          </span>
+          <a class="flex items-center gap-[1rem]" href="tel:050-3096-6400">
+            <i class="fa-solid fa-phone-volume text-[#e87131] text-[3rem]"></i>
+            <span class="text-[4.1rem]">050-3096-6400</span>
+          </a>
+          <div class="flex items-center gap-[1rem]">
+            <span>お電話受付時間</span>
+            <span>平日10：00～17：00</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="py-[4rem] wrapper flex flex-col">
+        <h2 class="section-title text-center">ABOUT</h2>
+        <h3
+          class="section-subtitle text-center flex flex-wrap items-center justify-center"
+        >
+          <div class="flex relative">
+            <span class="z-[2]">アスベスト</span>
+            <span class="z-[1] yellow-marker-small" />
+          </div>
+          <span>・</span>
+          <div class="flex relative">
+            <span class="z-[2]">じん肺健康被害</span>
+            <span class="z-[1] yellow-marker-small" />
+          </div>
+          <span>とは</span>
+        </h3>
+        <div
+          class="mt-[2rem] flex 800:flex-col gap-[4rem] items-center justify-center"
+        >
+          <img src="assets/images/about-image.png" alt="About" />
+          <div class="flex flex-col gap-[1rem]">
+            <p>
+              アスベスト（石綿）による健康被害とは、飛び散ったアスベスト（石綿）を吸い込むことにより、石綿肺、中皮腫や肺がんなどを発病することをさします。
+            </p>
+            <p>
+              アスベスト（石綿）による健康被害とは、飛び散ったアスベスト（石綿）を吸い込むことにより、石綿肺、中皮腫や肺がんなどを発病することをさします。
+            </p>
+            <p>
+              労災保険や石綿健康被害救済給付のほか、国に対しては給付金・賠償金を、企業に対しては損害賠償を請求する方法があります。国への給付金・賠償金請求には、いわゆる建設労働者型と工場労働者型という２つの類型があります。
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-[2rem] text-center 800:text-left text-[#be4729] text-[2.6rem]"
+        >
+          <h4 class="font-bold">
+            「心当たりはあるけれど、どちらの類型の対象となるかわからない」という方、
+          </h4>
+          <h4 class="font-bold">
+            お一人で悩まず、ぜひ一度当弁護団にご相談ください。
+          </h4>
+        </div>
+        <img
+          class="mt-[2rem] w-[30rem] 600:w-full mx-auto"
+          src="assets/images/about-down-arrow.png"
+          alt="Arrow Down"
+        />
+      </section>
+
+      <!-- Target Section -->
+      <section class="py-[4rem] bg-[#f9f7f3] flex flex-col relative">
+        <img
+          src="assets/images/target-up.png"
+          alt="Background Up"
+          class="absolute top-0 left-0 z-[1] w-[40rem] 1000:hidden"
+        />
+        <img
+          src="assets/images/target-bottom.png"
+          alt="Background Down"
+          class="absolute bottom-0 right-0 z-[1] w-[40rem] 1000:hidden"
+        />
+        <div class="z-[2] wrapper flex flex-col">
+          <h2 class="section-title text-center">TARGET</h2>
+          <h3 class="section-subtitle mx-auto text-center flex relative">
+            <span>このような方が対象です</span>
+            <img
+              src="assets/images/target-mark.png"
+              alt="Arrow"
+              class="absolute top-[5%] right-[4rem] 900:-top-[5%] 900:right-[3.5rem]"
+            />
+          </h3>
+          <div
+            class="mt-[4rem] flex flex-col rounded-[5px] overflow-hidden bg-[#f3eddd]"
+          >
+            <div
+              class="flex flex-wrap items-center justify-center gap-[1rem] p-[1rem] font-bold text-[2rem]"
+            >
+              <img src="assets/images/kiran.png" alt="Icon" />
+              <span class="text-[#e58333]">建設型</span>
+              <span>アスベスト健康被害の場合</span>
+            </div>
+            <div class="bg-white mx-[3px] mb-[3px] p-[2rem] flex flex-col">
+              <div class="grid grid-cols-2 900:grid-cols-1 gap-[2rem]">
+                <div class="flex gap-[1rem] h-max">
+                  <b class="text-[#e1af87] text-[6rem] 900:w-[10rem]">01</b>
+                  <div class="bg-[#bdb5ad] w-[2px]"></div>
+                  <div class="flex-1">
+                    <b>昭和50年10月1日から平成16年9月30日までの間※</b>
+                    <span>
+                      に、一定の屋内作業場で建設業務に従事していた労働者や、一人親方・解体工・中小事業主（家族従事者等を含む）またはそのご遺族の方
+                    </span>
+                  </div>
+                </div>
+                <div class="flex gap-[1rem] h-max">
+                  <b class="text-[#e1af87] text-[6rem] 900:w-[10rem]">02</b>
+                  <div class="bg-[#bdb5ad] w-[2px]"></div>
+                  <span class="flex-1">
+                    その結果、石綿肺、中皮腫、肺がん、著しい呼吸機能障害を伴うびまん性胸膜肥厚、良性石綿胸水といった石綿関連疾病を発症した方、またはそのご遺族
+                  </span>
+                </div>
+              </div>
+              <span class="mt-[2rem]">
+                ※吹付作業の場合は昭和47年10月1日から昭和50年9月30日まで
+              </span>
+              <div class="mt-[4rem] flex flex-col gap-[1rem]">
+                <h4 class="text-[#e87131] font-bold">
+                  国の責任が認められた主な職種
+                </h4>
+                <p>
+                  大工、内装工、電工、吹付工、左官工、塗装工、タイル工、配管工、ダクト工、空調設備工、鉄骨工、溶接工、ブロック工、保温工、鳶工、墨出し工、型枠大工、解体工、はつり工、築炉工、エレベーター工、サッシ工、シャッター工、電気保安工、現場監督など
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-[4rem] flex flex-col rounded-[5px] overflow-hidden bg-[#f3eddd]"
+          >
+            <div
+              class="flex flex-wrap items-center justify-center gap-[1rem] p-[1rem] font-bold text-[2rem]"
+            >
+              <img src="assets/images/target-factory.png" alt="Icon" />
+              <span class="text-[#e58333]">工場型</span>
+              <span>アスベスト健康被害の場合</span>
+            </div>
+            <div class="bg-white mx-[3px] mb-[3px] p-[2rem] flex flex-col">
+              <div class="grid grid-cols-2 900:grid-cols-1 gap-[2rem]">
+                <div class="flex gap-[1rem] h-max">
+                  <b class="text-[#e1af87] text-[6rem] 900:w-[10rem]">01</b>
+                  <div class="bg-[#bdb5ad] w-[2px]"></div>
+                  <div class="flex-1">
+                    <b>昭和33年5月26日から昭和46年4月28日までの間</b>
+                    <span>
+                      、アスベスト（石綿）を取り扱う工場等※1において作業に従事されていた方
+                    </span>
+                  </div>
+                </div>
+                <div class="flex gap-[1rem] h-max">
+                  <b class="text-[#e1af87] text-[6rem] 900:w-[10rem]">02</b>
+                  <div class="bg-[#bdb5ad] w-[2px]"></div>
+                  <span class="flex-1">
+                    その結果、中皮腫、肺がん、石綿肺、びまん性胸膜肥厚など石綿による健康被害を被った方※2
+                  </span>
+                </div>
+              </div>
+              <span class="mt-[2rem]">
+                ※1：局所排気装置を設置すべきであった工場等であり、これまでに厚生労働省によって労災認定等された数千もの事業場名が公表されています。詳しくはこちらをご覧ください。
+              </span>
+              <span class="mt-[2rem]">
+                ※2：労災保険や石綿健康被害救済法に基づく給付を受けていても、更に賠償を請求できます。
+              </span>
+              <div class="mt-[4rem] flex flex-col gap-[1rem]">
+                <h4 class="text-[#e87131] font-bold">
+                  「アスベストを製造する工場」ではない方も救済対象となる可能性があります。
+                </h4>
+                <p>
+                  例えば次のような事業所や工場で働いていた方々も、国からアスベスト（石綿）被害賠償金をもらえる可能性があります。お心当たりのある方やご遺族の方は、お気軽にお問い合わせください。
+                </p>
+                <b>【救済対象となる可能性がある工場】</b>
+                <span>・セメント、コンクリートブロック等の製造工場</span>
+                <span>・スレートや煙突等の製造工場</span>
+                <span>・電気機械の製造工場</span>
+                <span>・化学繊維製造機械の製造工場</span>
+                <span>・自動車整備会社など</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flow Section -->
+      <section class="flex flex-col relative py-[4rem] bg-[#fbf4e5]">
+        <img
+          src="assets/images/flow-calc-bg.png"
+          alt="Background"
+          class="absolute bottom-0 right-0 z-[1] w-[40rem] 900:hidden"
+        />
+        <div class="z-[2] wrapper flex flex-col relative">
+          <div
+            class="flex 700:flex-col items-center justify-center 500:items-start gap-[4rem] 700:gap-[2rem]"
+          >
+            <img
+              src="assets/images/flow-calc.png"
+              alt="Flow"
+              class="500:w-full"
+            />
+            <div class="flex flex-col">
+              <h2 class="section-title">FLOW</h2>
+              <h3 class="section-subtitle">
+                <div class="flex items-center">
+                  <span class="text-[#be4729]">給付金</span>
+                  <span>・</span>
+                  <span class="text-[#be4729]">賠償金</span>
+                  <span>の</span>
+                </div>
+                <div>
+                  <span>受け取りの流れ</span>
+                </div>
+              </h3>
+            </div>
+          </div>
+          <div
+            class="my-[4rem] border-[3px] border-[#f3eddd] bg-white p-[3rem] 600:p-[2rem] flex 600:flex-col items-center gap-[3rem] 600:gap-[2rem] rounded-[10px] relative"
+          >
+            <span class="text-[#76b538] text-[3.2rem] w-[16rem] 600:w-auto"
+              >無料相談</span
+            >
+            <div class="flex-1 flex flex-col gap-[1rem]">
+              <p>
+                まずはお電話、又はご依頼フォームからお問い合わせください。（お急ぎの場合はお電話がおすすめです。）
+              </p>
+              <p>
+                お電話は平日9時～17時まで、ご依頼フォームは24時間365日受付可能です！
+              </p>
+            </div>
+            <div
+              class="bg-[#f8d28f] w-[10px] h-[4rem] absolute left-[50%] bottom-[calc(-4rem-3px)] -translate-x-1/2"
+            ></div>
+          </div>
+          <div
+            class="border-[3px] border-[#f3eddd] bg-white p-[3rem] 600:p-[2rem] flex 600:flex-col items-center gap-[3rem] 600:gap-[2rem] rounded-[10px] relative"
+          >
+            <span class="text-[#76b538] text-[3.2rem] w-[16rem] 600:w-auto">
+              調査・ 資料収集
+            </span>
+            <div class="flex-1 flex flex-col gap-[2rem]">
+              <p>
+                依頼者の方にもご協力をお願いしつつ、給付金の請求に必要となる書類を収集していきます。当弁護団でしっかりとサポートしていきますのでご安心ください。
+              </p>
+              <div class="w-full h-[2px] bg-[#f3eddd]"></div>
+              <p>
+                依頼者の方から提出いただいた資料をもとに、当弁護団が詳しく調査・検討を行います。同時に、被害者であることの証明や給付金や賠償金の受給要件に必要な書類が揃っているか、書類に不備や記入漏れがないかどうかをチェックします。
+              </p>
+            </div>
+            <div
+              class="bg-[#f8d28f] w-[10px] h-[4rem] absolute left-[50%] bottom-[calc(-4rem-3px)] -translate-x-1/2"
+            ></div>
+          </div>
+          <div
+            class="mt-[10rem] 900:mt-[4rem] flex 900:flex-col gap-[4rem] relative"
+          >
+            <div
+              class="border-[10px] border-b-0 border-[#f8d28f] w-[calc(50%+4rem)] h-[6rem] absolute left-[50%] top-[-6rem] -translate-x-1/2 900:hidden"
+            ></div>
+            <div class="flex-1 flex flex-col gap-[4rem]">
+              <div
+                class="rounded-[10px] flex-center gap-[2rem] bg-[#fae0d1] p-[2rem] relative"
+              >
+                <div
+                  class="bg-white rounded-full flex-center h-[8rem] w-[8rem]"
+                >
+                  <img
+                    src="assets/images/kiran.png"
+                    alt="Icon"
+                    class="w-[70%]"
+                  />
+                </div>
+                <div class="flex text-[3.2rem]">
+                  <b class="red-underline">建設型</b>
+                  <b>の場合</b>
+                </div>
+                <div
+                  class="bg-[#f8d28f] w-[10px] h-[4rem] absolute left-[50%] bottom-[-4rem] -translate-x-1/2"
+                ></div>
+              </div>
+              <div
+                class="flex-1 bg-white p-[2rem] border-[3px] border-[#fae0d1] rounded-[10px] flex flex-col gap-[2rem] relative"
+              >
+                <div class="flex flex-col gap-[1rem]">
+                  <h4 class="text-[2.2rem] text-[#76b538] font-bold">
+                    国への給付金申請
+                  </h4>
+                  <p>
+                    労災認定または石綿救済法による救済を受けている方は、厚生労働省へ必要書類を提出いたします。
+                  </p>
+                  <p>
+                    労災認定または石綿救済法による救済を受けていない方は、労災申請または石綿救済法による給付金申請手続を事前に行い、認定を受けたあとに厚生労働省へ必要書類を提出いたします。
+                  </p>
+                </div>
+                <div class="h-[2px] bg-[#fae0d1]"></div>
+                <div class="flex flex-col gap-[1rem]">
+                  <h4 class="text-[2.2rem] text-[#76b538] font-bold">認定</h4>
+                  <p>
+                    厚生労働省の審査・認定審査会の審査を受け、給付金支給の認定がされると認定決定通知書が送付されます。
+                  </p>
+                </div>
+                <div class="h-[2px] bg-[#fae0d1]"></div>
+                <div class="flex flex-col gap-[1rem]">
+                  <h4 class="text-[2.2rem] text-[#76b538] font-bold">
+                    給付金の受け取り
+                  </h4>
+                  <p>給付金額が決定したら、給付金を受け取ることができます。</p>
+                  <p>
+                    ※訴訟による建設アスベストの国家賠償請求については別途お尋ねください。
+                  </p>
+                </div>
+                <div
+                  class="bg-[#f8d28f] w-[10px] h-[4rem] absolute left-[50%] bottom-[-4rem] -translate-x-1/2 hidden 900:flex"
+                ></div>
+              </div>
+            </div>
+            <div class="flex-1 flex flex-col gap-[4rem]">
+              <div
+                class="rounded-[10px] flex-center gap-[2rem] bg-[#f5ead7] p-[2rem] relative"
+              >
+                <div
+                  class="bg-white rounded-full flex-center h-[8rem] w-[8rem]"
+                >
+                  <img
+                    src="assets/images/flow-factory.png"
+                    alt="Icon"
+                    class="w-[70%]"
+                  />
+                </div>
+                <div class="flex text-[3.2rem]">
+                  <b class="red-underline">工場型</b>
+                  <b>の場合</b>
+                </div>
+                <div
+                  class="bg-[#f8d28f] w-[10px] h-[4rem] absolute left-[50%] bottom-[-4rem] -translate-x-1/2"
+                ></div>
+              </div>
+              <div
+                class="flex-1 bg-white p-[2rem] border-[3px] border-[#f5ead7] rounded-[10px] flex flex-col gap-[2rem]"
+              >
+                <div class="flex flex-col gap-[1rem]">
+                  <h4 class="text-[2.2rem] text-[#76b538] font-bold">
+                    訴訟の提起
+                  </h4>
+                  <p>
+                    工場労働型の場合、賠償金を請求するための書類（訴状）を弁護士が作成し、必要な点資料と一緒に裁判所へ提出します。
+                  </p>
+                </div>
+                <div class="h-[2px] bg-[#f5ead7]"></div>
+                <div class="flex flex-col gap-[1rem]">
+                  <h4 class="text-[2.2rem] text-[#76b538] font-bold">和解</h4>
+                  <p>
+                    和解の成立により、依頼者の方の症状・病態に応じた賠償金などの金額が決定し、その内容を記載した和解調書が裁判所にて作成されます。
+                  </p>
+                </div>
+                <div class="h-[2px] bg-[#f5ead7]"></div>
+                <div class="flex flex-col gap-[1rem]">
+                  <h4 class="text-[2.2rem] text-[#76b538] font-bold">
+                    賠償金の受け取り
+                  </h4>
+                  <p>
+                    弁護士が和解調書などの賠償金の請求に関する書類を国に提出すると、和解で決定した賠償金を受け取ることができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/images/flow-calc-bg.png"
+            alt="Flow"
+            class="mt-[4rem] 600:w-full hidden 900:flex w-[30rem] mx-auto"
+          />
+        </div>
+      </section>
+
+      <!-- Call Section -->
+      <section
+        class="flex bg-[#f9f7f3] border-y-2 border-[#fabf3d] pt-[2rem] 1050:pb-[2rem] 600:hidden"
+      >
+        <div class="wrapper flex items-center justify-center gap-[4rem]">
+          <img
+            src="assets/images/connect-man-women.png"
+            alt="Connect"
+            class="1050:hidden"
+          />
+          <div class="flex flex-col gap-[2rem] pb-[1rem] 1050:p-0">
+            <h1 class="text-[#e87131] text-[3rem] font-bold">
+              相談料は無料！お気軽にお問い合わせください
+            </h1>
+            <div class="flex items-center gap-[2rem]">
+              <div class="flex flex-col">
+                <a
+                  class="flex items-center gap-[1rem]"
+                  href="tel:050-3096-6400"
+                >
+                  <i
+                    class="fa-solid fa-phone-volume text-[#e87131] text-[3rem]"
+                  ></i>
+                  <b class="text-[3.2rem]">050-3096-6400</b>
+                </a>
+                <div class="flex items-center gap-[1rem]">
+                  <span>お電話受付時間</span>
+                  <span>平日10：00～17：00</span>
+                </div>
+              </div>
+              <a
+                class="min-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px]"
+                href="#contact"
+              >
+                <i
+                  class="fa-solid fa-envelope w-[4.6rem] h-[4.6rem] flex items-center justify-center bg-[#fff] text-[#76b538] rounded-[100%] text-[2.8rem]"
+                ></i>
+                <div class="flex flex-col">
+                  <span>24時間・365日受付中</span>
+                  <span>フォームでのご相談予約</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Price Section -->
+      <section class="py-[4rem] wrapper flex flex-col">
+        <h2 class="section-title text-center">PRICE</h2>
+        <h3 class="section-subtitle text-center">
+          <span class="relative">
+            弁護士費用
+            <img
+              src="assets/images/wave.png"
+              alt="Border"
+              class="absolute left-[-0.6rem] bottom-[-1rem]"
+            />
+          </span>
+          <span>について</span>
+        </h3>
+        <div
+          class="flex 600:flex-col items-center justify-center gap-[2rem] mt-[4rem]"
+        >
+          <img src="assets/images/price-collect-money.png" alt="Price" />
+          <div class="flex flex-col gap-[1rem] font-bold">
+            <div
+              class="text-[2.2rem] text-[#fff] bg-[#e58333] py-[1rem] max-w-max 600:mx-auto px-[2rem] rounded-[24px]"
+            >
+              初回相談料は０円です。
+            </div>
+            <p>当弁護団は、できる限り広く被害救済を図るため、</p>
+            <p>
+              <span>原則</span>
+              <span class="bg-[#f9dd7f]">
+                成功報酬制としており相談料・調査料・着手金は無料
+              </span>
+              <span> です。 </span>
+            </p>
+            <p>安心してお任せください！</p>
+          </div>
+        </div>
+        <div class="hidden 600:flex items-center gap-[2rem] mt-[4rem]">
+          <img src="assets/images/price-finger.png" alt="Icon" />
+          <b class="text-[2.2rem]">表は横スクロールでご覧いただけます！</b>
+        </div>
+        <div class="flex flex-col gap-[1rem] mt-[4rem]">
+          <div class="flex items-center gap-[1rem]">
+            <div class="bg-[#e58333] w-[2rem] h-[2rem]"></div>
+            <b class="text-[2rem]">建設現場で働いていた方</b>
+          </div>
+          <table
+            class="text-center min-w-full bg-white border-[2px] border-[#f3eddd]"
+          >
+            <thead>
+              <tr class="bg-[#f8f5ee]">
+                <th
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd]"
+                ></th>
+                <th
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd]"
+                >
+                  着手金
+                </th>
+                <th class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
+                  報酬金
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] bg-[#f8f5ee]"
+                >
+                  国に対する建設アスベスト給付金請求
+                </td>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd]"
+                >
+                  0円
+                </td>
+                <td class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
+                  得られた給付金の11％
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] bg-[#f8f5ee]"
+                >
+                  雇用主に対する損害賠償請求
+                </td>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] flex flex-col"
+                >
+                  <span>交渉は0円</span>
+                  <span>訴訟の場合は３３万円以上</span>
+                </td>
+                <td class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
+                  得られた賠償金の１１％
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] bg-[#f8f5ee]"
+                >
+                  建材メーカーに対する損害賠償請求
+                </td>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] flex flex-col"
+                >
+                  <span>交渉は0円</span>
+                  <span>訴訟の場合は３３万円以上</span>
+                </td>
+                <td class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
+                  得られた賠償金の22％
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex flex-col gap-[1rem] mt-[4rem]">
+          <div class="flex items-center gap-[1rem]">
+            <div class="bg-[#e58333] w-[2rem] h-[2rem]"></div>
+            <b class="text-[2rem]">石綿工場で働いていた方</b>
+          </div>
+          <table
+            class="text-center min-w-full bg-white border-[2px] border-[#f3eddd]"
+          >
+            <thead>
+              <tr class="bg-[#f8f5ee]">
+                <th
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd]"
+                ></th>
+                <th
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd]"
+                >
+                  着手金
+                </th>
+                <th class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
+                  報酬金
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] bg-[#f8f5ee]"
+                >
+                  国に対する損害賠償請求
+                </td>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd]"
+                >
+                  １１万円
+                </td>
+                <td class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
+                  和解金の１６．５％を基準
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] bg-[#f8f5ee]"
+                >
+                  雇用主に対する損害賠償請求の場合
+                </td>
+                <td
+                  class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] flex flex-col"
+                >
+                  <span>交渉は0円</span>
+                  <span>訴訟の場合は３３万円以上</span>
+                </td>
+                <td class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
+                  得られた利益の１１％
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex flex-col gap-[1rem] mt-[4rem]">
+          <p>
+            ※1
+            実費（医療機関に対する意見照会費用、通信費、各種書類取り寄せ費用、印紙代等）が必要となる場合があります。
+          </p>
+          <p>
+            ※2
+            事件が控訴によって高等裁判所に係属する場合には、追加着手金・実費が必要となります。
+          </p>
+          <p>※3 上記の弁護士費用は、いずれも消費税込みの金額です。</p>
+          <p>
+            ※4
+            上記の弁護士費用は、事案の難易度、証拠収集状況、相手方の対応等によって個別にご相談させていただく場合があります。
+          </p>
+        </div>
+      </section>
+
+      <!-- Introduce Section -->
+      <section
+        class="py-[4rem] wrapper flex 900:flex-col-reverse items-center 900:items-start gap-[4rem]"
+      >
+        <img
+          src="assets/images/introduce-lawyers-image.png"
+          alt="Background"
+          class="900:w-full z-[2]"
+        />
+        <div class="flex relative">
+          <img
+            src="assets/images/price-japan-map.png"
+            alt="Background"
+            class="absolute top-0 right-0 h-full z-[1]"
+          />
+          <div class="flex flex-col z-[2]">
+            <div class="flex flex-col">
+              <h2 class="section-title">INTRODUCE</h2>
+              <h3 class="section-subtitle flex flex-wrap">
+                <span>当弁護団の</span>
+                <div class="relative flex">
+                  <span class="z-[2]">弁護士紹介</span>
+                  <div class="yellow-marker-small"></div>
+                </div>
+              </h3>
+            </div>
+            <div class="flex flex-col gap-[1rem] mt-[4rem]">
+              <p>
+                現在、弁護団には、愛知、岐阜、三重の3県にまたがる合計15名の弁護士が所属しています。
+              </p>
+              <p>
+                （愛知県弁護士会所属8名、岐阜県弁護士会所属5名、三重県弁護士会所属2名）
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call Section -->
+      <section
+        class="flex bg-[#f9f7f3] border-y-2 border-[#fabf3d] pt-[2rem] 1050:pb-[2rem] 600:hidden"
+      >
+        <div class="wrapper flex items-center justify-center gap-[4rem]">
+          <img
+            src="assets/images/connect-man-women.png"
+            alt="Connect"
+            class="1050:hidden"
+          />
+          <div class="flex flex-col gap-[2rem] pb-[1rem] 1050:p-0">
+            <h1 class="text-[#e87131] text-[3rem] font-bold">
+              相談料は無料！お気軽にお問い合わせください
+            </h1>
+            <div class="flex items-center gap-[2rem]">
+              <div class="flex flex-col">
+                <a
+                  class="flex items-center gap-[1rem]"
+                  href="tel:050-3096-6400"
+                >
+                  <i
+                    class="fa-solid fa-phone-volume text-[#e87131] text-[3rem]"
+                  ></i>
+                  <b class="text-[3.2rem]">050-3096-6400</b>
+                </a>
+                <div class="flex items-center gap-[1rem]">
+                  <span>お電話受付時間</span>
+                  <span>平日10：00～17：00</span>
+                </div>
+              </div>
+              <a
+                class="min-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px]"
+                href="#contact"
+              >
+                <i
+                  class="fa-solid fa-envelope w-[4.6rem] h-[4.6rem] flex items-center justify-center bg-[#fff] text-[#76b538] rounded-[100%] text-[2.8rem]"
+                ></i>
+                <div class="flex flex-col">
+                  <span>24時間・365日受付中</span>
+                  <span>フォームでのご相談予約</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="bg-[#fdf6c8] py-[4rem] 900:pb-0 flex relative">
+        <img
+          src="assets/images/faq-thinking.png"
+          alt="Background"
+          class="absolute bottom-0 left-0 z-[1] w-[30rem] 900:hidden"
+        />
+        <div class="z-[2] wrapper flex flex-col">
+          <div
+            class="mx-auto text-center flex items-center gap-[2rem] mb-[4rem]"
+          >
+            <img src="assets/images/faq-1.png" alt="FAQ" />
+            <div class="flex flex-col">
+              <h2 class="section-title">FAQ</h2>
+              <h3 class="section-subtitle">よくある質問</h3>
+            </div>
+            <img src="assets/images/faq-2.png" alt="FAQ" />
+          </div>
+          <div class="flex flex-col gap-[2rem]">
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b
+                        >中皮腫と診断されましたが、何年も前に退職をしています。</b
+                      >
+                      <b>労災などの補償を受けることはできますか？</b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b
+                        >肺がんと診断されました。アスベストを扱う仕事をしていましたが、当時はたばこもたくさん吸っていました。補償を受けることはできますか？</b
+                      >
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>
+                    たばこをたくさん吸っていただけで、アスベストの健康被害の救済手続が受けられなくなるというわけではありません。
+                  </p>
+                  <p>
+                    ただし、建設作業従事者の国に対する給付金申請の手続では、喫煙歴によって給付金が減額されることがあります。
+                  </p>
+                  <p>
+                    肺がんの場合、転移によるものでない原発性の肺がんか、やエックス線写真でアスベストにさらされた形跡が確認できるか等諸々の基準を満たしているかによって、補償を受けられるかが決まります。
+                  </p>
+                  <p>
+                    タバコをすっておられた方の肺がんでもアスベスト原因として損害賠償が受けられたケースもあります。
+                  </p>
+                  <p>
+                    当弁護団では、アスベスト疾患の専門医を紹介できますので、お気軽にご相談ください。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>
+                        仕事でアスベストを扱っていた時の会社は倒産しています。労災認定を受けられますか？
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b
+                        >すでに石綿救済法の認定を受けていますが、改めて労災申請はできますか？</b
+                      >
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>夫が中皮腫で亡くなりました。</b>
+                      <b
+                        >夫は何の救済手続も受けていませんが、遺族の立場で救済手続による補償を受けることはできますか？
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b
+                        >「労災支給決定等情報提供サービス」の結果が「非該当」でした。</b
+                      >
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>労災申請をしていませんが、それでも相談できますか？</b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>
+                        どこでアスベストを吸ったか分からない場合でも相談できますか？
+                      </b>
+                      <b>
+                        建設現場ではなく、工場で働いていて場合はどうですか？
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>
+                        被害者本人が相談に行くのが難しいのですが、家族が代わりに相談することはできますか？
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>
+                        賠償金（給付金）を請求するためには、裁判をしなければならないのでしょうか？
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>
+                        賠償金（給付金）の請求にあたって必要な書類は、自分で揃える必要があるのでしょうか。
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>
+                        国に対する請求、雇用先や建材メーカーに対する請求、必ず、一緒に依頼する必要があるのでしょうか？
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>
+                        裁判をした場合、必ず出席する必要があるのでしょうか？
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b> 弁護士に依頼する際の費用はどのくらいですか？</b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item flex flex-col gap-[2rem]">
+              <div class="rounded-[5px] overflow-hidden">
+                <div
+                  class="bg-white p-[2rem] cursor-pointer flex items-center gap-[2rem]"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-[2rem]">
+                    <div
+                      class="accordion-question-circle rounded-full bg-[#e58333] text-white h-[5rem] w-[5rem] flex-center"
+                    >
+                      <b class="text-[2.6rem]">Q</b>
+                    </div>
+                    <div
+                      class="accordion-questions flex flex-col gap-[5px] text-black"
+                    >
+                      <b>
+                        弁護士の方に依頼するにあたってどのような点に着目すればよいでしょうか。
+                      </b>
+                    </div>
+                  </div>
+                  <i
+                    class="fa-solid fa-caret-down text-[3rem] text-[#e58333] transition-all ml-auto"
+                  ></i>
+                </div>
+                <div
+                  class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
+                >
+                  <p>近日公開</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/images/faq-thinking.png"
+            alt="Background"
+            class="w-[30rem] 900:flex hidden mx-auto mt-[4rem]"
+          />
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="pt-[4rem] flex flex-col" id="contact">
+        <div class="wrapper flex flex-col">
+          <div class="flex flex-col items-center gap-[2rem]">
+            <h2 class="section-title text-center">CONTACT</h2>
+            <h3 class="section-subtitle text-center flex flex-col">
+              <span>相談料は無料</span>
+              <span>お気軽にお問い合わせください</span>
+            </h3>
+          </div>
+          <div
+            class="flex 600:flex-col gap-[2rem] items-center justify-center mt-[4rem]"
+          >
+            <img src="assets/images/contact-girl.png" alt="Contact" />
+            <div class="flex flex-col 600:items-center gap-[1rem]">
+              <h4 class="text-[#e87131] text-[2.4rem] font-bold">
+                お電話でのお問い合わせ
+              </h4>
+              <a class="flex items-center gap-[1rem]" href="tel:050-3096-6400">
+                <i
+                  class="fa-solid fa-phone-volume text-[#e87131] text-[3rem]"
+                ></i>
+                <b class="text-[3.2rem]">050-3096-6400</b>
+              </a>
+              <div class="flex items-center gap-[1rem]">
+                <span>お電話受付時間</span>
+                <span>平日10：00～17：00</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-[2rem] rounded-[10px] border-[3px] border-[#c2dc9c] bg-[#f8f5ee] flex flex-col mt-[4rem]"
+          >
+            <div class="mx-auto flex 700:flex-col items-center gap-[4rem]">
+              <div class="flex flex-col items-center font-bold">
+                <h5 class="flex items-center gap-[5px] text-[2.2rem]">
+                  <img src="assets/images/contact-clock.png" alt="Clock" />
+                  <span>1分カンタン</span>
+                </h5>
+                <h6 class="text-[3.2rem]">お問い合わせフォーム</h6>
+                <h6
+                  class="bg-[#f3eddd] text-[#be4729] px-[1.2rem] py-[0.6rem] mt-[1rem]"
+                >
+                  365日24時間ご相談いただけます！
+                </h6>
+              </div>
+              <img src="assets/images/contact-man.png" alt="Contact" />
+            </div>
+            <form
+              id="contact-form"
+              class="mt-[4rem] flex flex-col gap-[4rem] mx-auto 700:mx-0"
+            >
+              <div
+                class="flex 700:flex-col items-center 700:items-start gap-[2rem] 700:gap-[1rem]"
+              >
+                <label
+                  for="お名前"
+                  class="flex items-center justify-end 700:justify-start gap-[1rem] w-[18rem] font-bold"
+                >
+                  <!-- <span>お名前</span> -->
+                  <span>メールアドレス</span>
+                  <span class="bg-[#be4729] text-white rounded px-[4px]">
+                    必須
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  name="お名前"
+                  id="お名前"
+                  class="700:w-full w-[50rem] h-[4rem] rounded-[5px] px-[1rem] focus:outline-none focus:border-[2px] focus:border-[#be4729]"
+                  placeholder="例）山田太郎"
+                  required
+                />
+              </div>
+              <div
+                class="flex 700:flex-col items-center 700:items-start gap-[2rem] 700:gap-[1rem]"
+              >
+                <label
+                  for="ふりがな"
+                  class="flex items-center justify-end 700:justify-start gap-[1rem] w-[18rem] font-bold"
+                >
+                  <span>ふりがな</span>
+                  <span class="bg-[#be4729] text-white rounded px-[4px]">
+                    必須
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  name="ふりがな"
+                  id="ふりがな"
+                  class="700:w-full w-[50rem] h-[4rem] rounded-[5px] px-[1rem] focus:outline-none focus:border-[2px] focus:border-[#be4729]"
+                  placeholder="例）やまだたろう"
+                  required
+                />
+              </div>
+              <div
+                class="flex 700:flex-col items-center 700:items-start gap-[2rem] 700:gap-[1rem]"
+              >
+                <label
+                  for="電話番号"
+                  class="flex items-center justify-end 700:justify-start gap-[1rem] w-[18rem] font-bold"
+                >
+                  <span>電話番号</span>
+                  <span class="bg-[#be4729] text-white rounded px-[4px]">
+                    必須
+                  </span>
+                </label>
+                <input
+                  type="tel"
+                  name="電話番号"
+                  id="電話番号"
+                  class="700:w-full w-[50rem] h-[4rem] rounded-[5px] px-[1rem] focus:outline-none focus:border-[2px] focus:border-[#be4729]"
+                  placeholder="例）000-0000-0000"
+                  required
+                />
+              </div>
+              <div
+                class="flex 700:flex-col items-center 700:items-start gap-[2rem] 700:gap-[1rem]"
+              >
+                <label
+                  for="メールアドレス"
+                  class="flex items-center justify-end 700:justify-start gap-[1rem] w-[18rem] font-bold"
+                >
+                  <span>メールアドレス</span>
+                  <span class="bg-[#be4729] text-white rounded px-[4px]">
+                    必須
+                  </span>
+                </label>
+                <input
+                  type="email"
+                  name="メールアドレス"
+                  id="メールアドレス"
+                  class="700:w-full w-[50rem] h-[4rem] rounded-[5px] px-[1rem] focus:outline-none focus:border-[2px] focus:border-[#be4729]"
+                  placeholder="例）sample@example.com"
+                  required
+                />
+              </div>
+              <div
+                class="flex 700:flex-col items-start gap-[2rem] 700:gap-[1rem]"
+              >
+                <label
+                  for="ご病気"
+                  class="flex items-center justify-end 700:justify-start gap-[1rem] w-[18rem] font-bold"
+                >
+                  <span>ご病気</span>
+                  <span class="bg-[#be4729] text-white rounded px-[4px]">
+                    必須
+                  </span>
+                </label>
+                <div
+                  class="700:w-full w-[50rem] flex flex-wrap items-center gap-[2rem]"
+                >
+                  <label for="石綿肺" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="ご病気"
+                      id="石綿肺"
+                      value="石綿肺"
+                      class="mr-[1rem]"
+                    />
+                    <span>石綿肺</span>
+                  </label>
+                  <label for="びまん性胸膜肥厚" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="ご病気"
+                      id="びまん性胸膜肥厚"
+                      value="びまん性胸膜肥厚"
+                      class="mr-[1rem]"
+                    />
+                    <span>びまん性胸膜肥厚</span>
+                  </label>
+                  <label for="肺がん" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="ご病気"
+                      id="肺がん"
+                      value="肺がん"
+                      class="mr-[1rem]"
+                    />
+                    <span>肺がん</span>
+                  </label>
+                  <label for="中皮腫" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="ご病気"
+                      id="中皮腫"
+                      value="中皮腫"
+                      class="mr-[1rem]"
+                    />
+                    <span>中皮腫</span>
+                  </label>
+                  <label for="その他" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="ご病気"
+                      id="その他"
+                      value="その他"
+                      class="mr-[1rem]"
+                    />
+                    <span>その他</span>
+                  </label>
+                </div>
+              </div>
+              <div
+                class="flex 700:flex-col items-start gap-[2rem] 700:gap-[1rem]"
+              >
+                <label
+                  for="行政認定"
+                  class="flex items-center justify-end 700:justify-start gap-[1rem] w-[18rem] font-bold"
+                >
+                  <span>行政認定</span>
+                  <span class="bg-[#be4729] text-white rounded px-[4px]">
+                    必須
+                  </span>
+                </label>
+                <div
+                  class="700:w-full w-[50rem] flex flex-wrap items-center gap-[2rem]"
+                >
+                  <label for="労災認定あり" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="行政認定"
+                      id="労災認定あり"
+                      value="労災認定あり"
+                      class="mr-[1rem]"
+                    />
+                    <span>労災認定あり</span>
+                  </label>
+                  <label for="石綿救済法認定あり" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="行政認定"
+                      id="石綿救済法認定あり"
+                      value="石綿救済法認定あり"
+                      class="mr-[1rem]"
+                    />
+                    <span>石綿救済法認定あり</span>
+                  </label>
+                  <label
+                    for="じん肺管理区分2以上認定"
+                    class="flex items-center"
+                  >
+                    <input
+                      type="checkbox"
+                      name="行政認定"
+                      id="じん肺管理区分2以上認定"
+                      value="じん肺管理区分2以上認定"
+                      class="mr-[1rem]"
+                    />
+                    <span>じん肺管理区分2以上認定</span>
+                  </label>
+                  <label for="行政認定は受けていない" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="行政認定"
+                      id="行政認定は受けていない"
+                      value="行政認定は受けていない"
+                      class="mr-[1rem]"
+                    />
+                    <span>行政認定は受けていない</span>
+                  </label>
+                  <label for="その他" class="flex items-center">
+                    <input
+                      type="checkbox"
+                      name="行政認定"
+                      id="その他"
+                      value="その他"
+                      class="mr-[1rem]"
+                    />
+                    <span>その他</span>
+                  </label>
+                </div>
+              </div>
+              <div
+                class="flex 700:flex-col items-start gap-[2rem] 700:gap-[1rem]"
+              >
+                <label
+                  for="ご相談内容"
+                  class="flex items-center justify-end 700:justify-start gap-[1rem] w-[18rem] font-bold"
+                >
+                  <span>ご相談内容</span>
+                  <span class="bg-[#be4729] text-white rounded px-[4px]">
+                    必須
+                  </span>
+                </label>
+                <textarea
+                  name="ご相談内容"
+                  id="ご相談内容"
+                  class="700:w-full w-[50rem] h-[10rem] rounded-[5px] px-[1rem] focus:outline-none focus:border-[2px] focus:border-[#be4729]"
+                  placeholder="例）石綿肺の労災認定について相談したいです。"
+                  required
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-center flex-wrap gap-[5px]">
+                <a href="#" class="underline">プライバシーポリシー</a>
+                <img
+                  src="assets/images/icon-1.svg"
+                  alt="icon"
+                  class="w-[2rem] h-[2rem]"
+                />
+                <span>に同意のうえ入力情報をお送りください。</span>
+              </div>
+              <button
+                type="submit"
+                class="bg-[#76b538] text-white rounded-[5px] mx-auto px-[4rem] py-[1rem] flex items-center gap-[1rem]"
+              >
+                <i class="fa-solid fa-envelope"></i>
+                この内容で確認する
+              </button>
+            </form>
+          </div>
+        </div>
+        <img
+          src="assets/images/buildings.png"
+          alt="Buildings"
+          class="w-auto mx-auto 900:hidden mt-[4rem]"
+        />
+        <img
+          src="assets/images/small-buildings.png"
+          alt="Buildings"
+          class="w-auto mx-auto hidden 900:block mt-[4rem]"
+        />
+      </section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <!-- Main Script -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Load Components -->
+    <script>
+      // Fetch and inject header component
+      fetch("./components/header.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      // Fetch and inject nav component
+      fetch("./components/nav.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("nav").innerHTML = data));
+
+      // Fetch and inject footer component
+      fetch("./components/footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+  </body>
+</html>
