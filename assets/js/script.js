@@ -2,18 +2,18 @@ function toggleAccordion(element) {
   const content = element.nextElementSibling;
   content.classList.toggle("hidden");
 
-  element.classList.toggle("bg-[#e58333]");
+  element.classList.toggle("bg-[#F47D08]");
   element.classList.toggle("bg-white");
 
   const icon = element.querySelector("i");
   icon.classList.toggle("text-white");
-  icon.classList.toggle("text-[#e58333]");
+  icon.classList.toggle("text-[#F47D08]");
   icon.classList.toggle("rotate-180");
 
   const questionCircle = element.querySelector(".accordion-question-circle");
-  questionCircle.classList.toggle("bg-[#e58333]");
+  questionCircle.classList.toggle("bg-[#F47D08]");
   questionCircle.classList.toggle("bg-white");
-  questionCircle.classList.toggle("text-[#e58333]");
+  questionCircle.classList.toggle("text-[#F47D08]");
   questionCircle.classList.toggle("text-white");
 
   const accordionQuestions = element.querySelector(".accordion-questions");
@@ -28,20 +28,20 @@ function toggleAccordion(element) {
         item.classList.add("hidden");
 
         const header = item.previousElementSibling;
-        header.classList.remove("bg-[#e58333]");
+        header.classList.remove("bg-[#F47D08]");
         header.classList.add("bg-white");
 
         // Reset icon color and rotation
         const otherIcon = header.querySelector("i");
         otherIcon.classList.remove("text-white", "rotate-180");
-        otherIcon.classList.add("text-[#e58333]");
+        otherIcon.classList.add("text-[#F47D08]");
 
         // Reset question circle color and text color
         const otherQuestionCircle = header.querySelector(
           ".accordion-question-circle"
         );
-        otherQuestionCircle.classList.remove("bg-white", "text-[#e58333]");
-        otherQuestionCircle.classList.add("bg-[#e58333]", "text-white");
+        otherQuestionCircle.classList.remove("bg-white", "text-[#F47D08]");
+        otherQuestionCircle.classList.add("bg-[#F47D08]", "text-white");
 
         // Reset question text color
         const otherAccordionQuestions = header.querySelector(
