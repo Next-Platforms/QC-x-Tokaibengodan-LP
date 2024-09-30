@@ -54,6 +54,39 @@
     </script>
   </head>
   <body>
+    <!-- Sticky Button -->
+    <div
+      class="hidden fixed top-[2rem] right-[2rem] z-[999]"
+      id="contact-button-sticky"
+    >
+      <a
+        class="max-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px] 800:p-0 800:bg-transparent 800:rounded-[100%]"
+        href="#contact-form"
+      >
+        <i
+          class="fa-solid fa-envelope w-[5rem] h-[5rem] flex items-center justify-center bg-[#fff] text-[#76b538] 800:bg-[#76b538] 800:text-[#fff] rounded-[100%] text-[2.8rem]"
+        ></i>
+        <div class="flex flex-col 800:hidden">
+          <b class="text-[1.8rem]">24時間・365日受付中</b>
+          <b class="text-[2.2rem]">フォームでのご相談予約</b>
+        </div>
+      </a>
+    </div>
+
+    <!-- Sticky Call Section -->
+    <div
+      id="call-section-sticky"
+      class="hidden min-w-max fixed bottom-[2rem] left-[50%] translate-x-[-50%] z-[999]"
+    >
+      <a
+        class="flex items-center gap-[1rem] bg-[#f8f7f2] border-2 border-[#fabf3d] p-[1rem] rounded-[8px]"
+        href="tel:050-3096-6400"
+      >
+        <i class="fa-solid fa-phone-volume text-[#e87131] text-[3rem]"></i>
+        <b class="text-[2.4rem]">050-3096-6400</b>
+      </a>
+    </div>
+
     <!-- Header Component -->
     <div id="header"></div>
 
@@ -1718,7 +1751,9 @@
                 ></textarea>
               </div>
               <div class="flex items-center justify-center flex-wrap gap-[5px]">
-                <a href="#" class="underline">プライバシーポリシー</a>
+                <a href="/privacy-policy.html" class="underline"
+                  >プライバシーポリシー</a
+                >
                 <img
                   src="assets/images/icon-1.svg"
                   alt="icon"
@@ -1753,7 +1788,7 @@
     <div id="footer"></div>
 
     <!-- Main Script -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
 
     <!-- Load Components -->
     <script>

@@ -55,49 +55,25 @@ function toggleAccordion(element) {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get the form element
-  const form = document.getElementById("contact-form");
-  const confirmationForm = document.getElementById("confirmation-form");
+  const contactForm = document.getElementById("contact-form");
 
   // Retrieve the stored data from localStorage
   const savedData = JSON.parse(localStorage.getItem("contactFormData"));
-
-  if (window.location.pathname === "/confirm.html") {
-    if (savedData) {
-      // Inject each value into its respective element
-      document.getElementById("お名前").textContent = savedData.お名前 || "";
-      document.getElementById("ふりがな").textContent =
-        savedData.ふりがな || "";
-      document.getElementById("電話番号").textContent =
-        savedData.電話番号 || "";
-      document.getElementById("メールアドレス").textContent =
-        savedData.メールアドレス || "";
-      document.getElementById("ご病気").textContent =
-        savedData.ご病気.join(", ") || "なし";
-      document.getElementById("行政認定").textContent =
-        savedData.行政認定.join(", ") || "なし";
-      document.getElementById("ご相談内容").textContent =
-        savedData.ご相談内容 || "";
-    } else {
-      // If no data is found, redirect back to the form page
-      alert("確認するためのデータがありません。");
-      window.location.href = "index.html";
-    }
-  }
 
   // Function to load saved data from localStorage and prefill the form
   function loadFormData() {
     if (savedData) {
       // Prefill each form field with the saved data
-      form["お名前"].value = savedData.お名前 || "";
-      form["ふりがな"].value = savedData.ふりがな || "";
-      form["電話番号"].value = savedData.電話番号 || "";
-      form["メールアドレス"].value = savedData.メールアドレス || "";
-      form["ご相談内容"].value = savedData.ご相談内容 || "";
+      contactForm["お名前"].value = savedData.お名前 || "";
+      contactForm["ふりがな"].value = savedData.ふりがな || "";
+      contactForm["電話番号"].value = savedData.電話番号 || "";
+      contactForm["メールアドレス"].value = savedData.メールアドレス || "";
+      contactForm["ご相談内容"].value = savedData.ご相談内容 || "";
 
       // Check the saved illness checkboxes
       if (savedData.ご病気) {
         savedData.ご病気.forEach((illness) => {
-          form.querySelector(
+          contactForm.querySelector(
             `input[name="ご病気"][value="${illness}"]`
           ).checked = true;
         });
@@ -106,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check the saved administrative identification checkboxes
       if (savedData.行政認定) {
         savedData.行政認定.forEach((identification) => {
-          form.querySelector(
+          contactForm.querySelector(
             `input[name="行政認定"][value="${identification}"]`
           ).checked = true;
         });
@@ -117,16 +93,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to save form data to localStorage
   function saveFormData() {
     const formData = {
-      お名前: form["お名前"].value,
-      ふりがな: form["ふりがな"].value,
-      電話番号: form["電話番号"].value,
-      メールアドレス: form["メールアドレス"].value,
-      ご相談内容: form["ご相談内容"].value,
+      お名前: contactForm["お名前"].value,
+      ふりがな: contactForm["ふりがな"].value,
+      電話番号: contactForm["電話番号"].value,
+      メールアドレス: contactForm["メールアドレス"].value,
+      ご相談内容: contactForm["ご相談内容"].value,
       ご病気: Array.from(
-        form.querySelectorAll('input[name="ご病気"]:checked')
+        contactForm.querySelectorAll('input[name="ご病気"]:checked')
       ).map((input) => input.value),
       行政認定: Array.from(
-        form.querySelectorAll('input[name="行政認定"]:checked')
+        contactForm.querySelectorAll('input[name="行政認定"]:checked')
       ).map((input) => input.value),
     };
 
@@ -137,41 +113,34 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "confirm.html";
   }
 
-  // Function to send email using Nodemailer
-  function sendEmail(data) {
-    fetch("/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => {
-        if (response.ok) {
-          alert("メールが送信されました。");
-          localStorage.removeItem("contactFormData"); // Clear localStorage
-          window.location.href = "success.html"; // Redirect to success page
-        } else {
-          alert("メール送信中にエラーが発生しました。");
-        }
-      })
-      .catch((error) => {
-        console.log("Error:", error);
-        alert("メール送信中にエラーが発生しました。");
-      });
-  }
-
   // Load saved form data on page load
   loadFormData();
 
   // Handle form submission
-  form.addEventListener("submit", function (e) {
+  contactForm.addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent form from submitting
     saveFormData(); // Save form data to localStorage
   });
-  confirmationForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent form from submitting
-    localStorage.removeItem("contactFormData"); // Clear saved form data
-    sendEmail(savedData);
-  });
+});
+
+window.addEventListener("scroll", function () {
+  var hiddenElement = document.getElementById("contact-button-sticky");
+  if (window.scrollY < 400) {
+    hiddenElement.classList.add("hidden");
+  } else {
+    hiddenElement.classList.remove("hidden");
+  }
+});
+
+window.addEventListener("scroll", function () {
+  var hiddenElement = document.getElementById("call-section-sticky");
+  if (window.innerWidth <= 1100) {
+    if (window.scrollY > 1400) {
+      hiddenElement.classList.remove("hidden");
+    } else {
+      hiddenElement.classList.add("hidden");
+    }
+  } else {
+    hiddenElement.classList.add("hidden");
+  }
 });
