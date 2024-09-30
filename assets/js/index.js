@@ -121,6 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault(); // Prevent form from submitting
     saveFormData(); // Save form data to localStorage
   });
+
+  const footer = document.getElementById("footer");
+  footer.classList.add("1100:mb-[10rem]");
 });
 
 window.addEventListener("scroll", function () {
