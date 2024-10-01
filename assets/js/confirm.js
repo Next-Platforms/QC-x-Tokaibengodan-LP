@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sendEmail(data) {
-    fetch("http://localhost:3001/send-email", {
+    fetch("https://simple-proxy-taupe.vercel.app/api/sakura", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
           localStorage.removeItem("contactFormData");
           window.location.href = "success.html";
         } else {
+          console.log("Error Response -->", response);
           alert("メール送信中にエラーが発生しました。");
         }
       })

@@ -60,7 +60,7 @@
       id="contact-button-sticky"
     >
       <a
-        class="max-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px] 800:p-0 800:bg-transparent 800:rounded-[100%]"
+        class="max-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px] 800:p-0 800:bg-transparent 800:rounded-[100%] hover:opacity-70 transition-all"
         href="#contact-form"
       >
         <i
@@ -76,15 +76,24 @@
     <!-- Sticky Call Section -->
     <div
       id="call-section-sticky"
-      class="hidden min-w-max fixed bottom-[2rem] left-[50%] translate-x-[-50%] z-[999]"
+      class="hidden fixed bottom-0 left-0 right-0 bg-[#f8f7f2] border-y-2 border-[#fabf3d] py-[1rem] z-[999] leading-[1.4]"
     >
-      <a
-        class="flex items-center gap-[1rem] bg-[#f8f7f2] border-2 border-[#fabf3d] p-[1rem] rounded-[8px]"
-        href="tel:050-3096-6400"
+      <div
+        class="wrapper flex flex-col items-center justify-center text-center"
       >
-        <i class="fa-solid fa-phone-volume text-[#e87131] text-[3rem]"></i>
-        <b class="text-[2.4rem]">050-3096-6400</b>
-      </a>
+        <b class="text-[1.8rem] text-[#F47D08]">相談料は無料！</b>
+        <b class="text-[1.8rem] text-[#F47D08]">
+          お気軽にお問い合わせください
+        </b>
+        <a class="flex items-center gap-[1rem]" href="tel:050-3096-6400">
+          <i class="fa-solid fa-phone-volume text-[#e87131] text-[2.6rem]"></i>
+          <b class="text-[2.8rem]">050-3096-6400</b>
+        </a>
+        <div class="flex flex-wrap items-center gap-[1rem] text-[1.6rem]">
+          <span>お電話受付時間</span>
+          <span>平日10：00～17：00</span>
+        </div>
+      </div>
     </div>
 
     <!-- Header Component -->
@@ -110,14 +119,6 @@
               <span class="text-[2.9rem] 800:text-[2.6rem]">岐阜県</span>
               <span class="text-[2.9rem] 800:text-[2.6rem]">・</span>
               <span class="text-[2.9rem] 800:text-[2.6rem]">三重県</span>
-              <span class="text-[2.2rem] 800:text-[2rem] relative">
-                にお住まいの
-                <img
-                  class="absolute top-[-35%] left-[50%] -translate-x-[50%]"
-                  src="assets/images/hero-arrow-up.png"
-                  alt="Arrow Up"
-                />
-              </span>
               <span class="text-[2.9rem] 800:text-[2.6rem]">アスベスト</span>
               <span class="text-[2.9rem] 800:text-[2.6rem]">や</span>
               <span class="text-[2.9rem] 800:text-[2.6rem]">粉じん</span>
@@ -163,9 +164,9 @@
               <span>企業</span>
               <span>からも賠償金を</span>
               <span>受け取れる</span>
-              <span
-                >可能性があります。
-                <img
+              <span>
+                可能性があります。
+                <!-- <img
                   src="assets/images/hero-wave-border.png"
                   alt="Wave"
                   style="
@@ -175,11 +176,14 @@
                     right: 0;
                     width: 92%;
                   "
-                />
+                /> -->
               </span>
             </div>
             <div class="line_3 text-[3.2rem] 800:text-[2.8rem]">
-              <span>当弁護団は企業に対する</span>
+              <span>
+                <!-- 当弁護団は企業に対する -->
+                「当弁護団は国や企業に対する」
+              </span>
             </div>
             <div class="line_4 text-[3.2rem] 800:text-[2.8rem]">
               <div>
@@ -645,7 +649,7 @@
                 </div>
               </div>
               <a
-                class="min-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px]"
+                class="min-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px] hover:opacity-70 transition-all"
                 href="#contact-form"
               >
                 <i
@@ -672,22 +676,11 @@
           class="flex 600:flex-col items-center justify-center gap-[2rem] mt-[4rem]"
         >
           <img src="assets/images/price-collect-money.png" alt="Price" />
-          <div class="flex flex-col gap-[1rem] font-bold">
-            <div
-              class="text-[2.2rem] text-[#fff] bg-[#F47D08] py-[1rem] max-w-max 600:mx-auto px-[2rem] rounded-[30px]"
-            >
-              初回相談料は０円です。
-            </div>
-            <p>当弁護団は、できる限り広く被害救済を図るため、</p>
-            <p>
-              <span>原則</span>
-              <span class="bg-[#f9dd7f]">
-                成功報酬制としており相談料・調査料・着手金は無料
-              </span>
-              <span> です。 </span>
-            </p>
-            <p>安心してお任せください！</p>
-          </div>
+          <b
+            class="text-[2.2rem] text-[#fff] bg-[#F47D08] py-[1rem] max-w-max 600:mx-auto px-[2rem] rounded-[30px]"
+          >
+            初回相談料は０円です。
+          </b>
         </div>
         <div class="hidden 600:flex items-center gap-[2rem] mt-[4rem]">
           <img src="assets/images/price-finger.png" alt="Icon" />
@@ -696,7 +689,7 @@
         <div class="flex flex-col gap-[1rem] mt-[4rem]">
           <div class="flex items-center gap-[1rem]">
             <div class="bg-[#F47D08] w-[1.6rem] h-[1.6rem]"></div>
-            <b class="text-[1.6rem]">建設現場で働いていた方</b>
+            <b class="text-[2rem]">建設現場で働いていた方</b>
           </div>
           <div class="overflow-x-auto">
             <table
@@ -742,11 +735,11 @@
                   <td
                     class="py-2 px-4 border-b-[2px] border-r-[2px] border-[#f3eddd] flex flex-col"
                   >
-                    <span>交渉は0円</span>
+                    <span>交渉は11万円～33万円</span>
                     <span>訴訟の場合は３３万円以上</span>
                   </td>
                   <td class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
-                    得られた賠償金の１１％
+                    得られた賠償金の１１％～
                   </td>
                 </tr>
                 <tr>
@@ -758,8 +751,7 @@
                   <td
                     class="py-2 px-4 border-r-[2px] border-[#f3eddd] flex flex-col"
                   >
-                    <span>交渉は0円</span>
-                    <span>訴訟の場合は３３万円以上</span>
+                    ３３万円以上（訴訟）
                   </td>
                   <td class="py-2 px-4">得られた賠償金の22％</td>
                 </tr>
@@ -770,7 +762,7 @@
         <div class="flex flex-col gap-[1rem] mt-[4rem]">
           <div class="flex items-center gap-[1rem]">
             <div class="bg-[#F47D08] w-[1.6rem] h-[1.6rem]"></div>
-            <b class="text-[1.6rem]">石綿工場で働いていた方</b>
+            <b class="text-[2rem]">石綿工場で働いていた方</b>
           </div>
           <div class="overflow-x-auto">
             <table
@@ -804,7 +796,7 @@
                     １１万円
                   </td>
                   <td class="py-2 px-4 border-b-[2px] border-[#f3eddd]">
-                    和解金の１６．５％を基準
+                    和解金の１６．５％～22%を基準
                   </td>
                 </tr>
                 <tr>
@@ -816,10 +808,10 @@
                   <td
                     class="py-2 px-4 border-r-[2px] border-[#f3eddd] flex flex-col"
                   >
-                    <span>交渉は0円</span>
+                    <span>交渉は11万円～33万円</span>
                     <span>訴訟の場合は３３万円以上</span>
                   </td>
-                  <td class="py-2 px-4">得られた利益の１１％</td>
+                  <td class="py-2 px-4">得られた利益の１１％～</td>
                 </tr>
               </tbody>
             </table>
@@ -837,47 +829,98 @@
           <p>※3 上記の弁護士費用は、いずれも消費税込みの金額です。</p>
           <p>
             ※4
-            上記の弁護士費用は、事案の難易度、証拠収集状況、相手方の対応等によって個別にご相談させていただく場合があります。
+            上記の弁護士費用は目安であり、事案の難易度、証拠収集状況、相手方の対応等によって個別にご相談させていただく場合があります。
           </p>
+          <p>※5 労災などとかの手続きは別途ご相談に乗らせて頂きます</p>
         </div>
       </section>
 
       <!-- Introduce Section -->
-      <section
-        class="py-[4rem] wrapper flex 900:flex-col-reverse items-center 900:items-start gap-[4rem]"
-        id="introduction"
-      >
-        <img
-          src="assets/images/introduce-lawyers-image.png"
-          alt="Background"
-          class="900:w-full z-[2]"
-        />
-        <div class="flex relative">
+      <section id="introduction" class="py-[4rem] wrapper flex flex-col">
+        <div
+          class="flex 900:flex-col-reverse items-center 900:items-start gap-[4rem]"
+        >
           <img
-            src="assets/images/price-japan-map.png"
+            src="assets/images/introduce-lawyers-image.png"
             alt="Background"
-            class="absolute top-0 right-0 h-full z-[1]"
+            class="900:w-full z-[2]"
           />
-          <div class="flex flex-col z-[2]">
+          <div class="flex relative">
             <img
-              src="assets/images/section-headings/introduce-lg.svg"
-              alt="Introduce"
-              class="w-[40rem] 900:hidden"
+              src="assets/images/price-japan-map.png"
+              alt="Background"
+              class="absolute top-0 right-0 h-full z-[1]"
             />
-            <img
-              src="assets/images/section-headings/introduce-sm.svg"
-              alt="Introduce"
-              class="w-[20rem] hidden 900:block"
-            />
-            <div class="flex flex-col gap-[1rem] mt-[4rem]">
-              <p>
-                現在、弁護団には、愛知、岐阜、三重の3県にまたがる合計15名の弁護士が所属しています。
-              </p>
-              <p>
-                （愛知県弁護士会所属8名、岐阜県弁護士会所属5名、三重県弁護士会所属2名）
-              </p>
+            <div class="flex flex-col z-[2]">
+              <img
+                src="assets/images/section-headings/introduce-lg.svg"
+                alt="Introduce"
+                class="w-[40rem] 900:hidden"
+              />
+              <img
+                src="assets/images/section-headings/introduce-sm.svg"
+                alt="Introduce"
+                class="w-[20rem] hidden 900:block"
+              />
+              <div class="flex flex-col gap-[1rem] mt-[4rem]">
+                <p>
+                  現在、弁護団には、愛知、岐阜、三重の3県にまたがる合計15名ほどの弁護士が所属しています。
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="flex flex-col gap-[1rem] mt-[2rem]">
+          <p>
+            私たちアスベスト・じん肺被害救済東海弁護団は、アスベストや粉じんよる健康被害を受けている労働
+            者や住民の方々の法的救済を図ることを目的とした弁護士の集まりです。
+          </p>
+          <p>
+            2005年9月に結成され、以後、約20年にわたり活動を継続してきました。現在、弁護団には、愛知、岐
+            阜、三重の3県にまたがる合計１５名の弁護士が所属しています。
+          </p>
+          <p>
+            これまで、アスベスト被害者やじん肺患者を対象とした医師及び弁護士による無料電話相談会の実施
+            や、その結果寄せられた個別の事案の解決（労災申請など）、岐阜県羽島市にあるニチアス羽島工場周辺
+            地域におけるアスベストや粉じんよる健康被害の調査活動等を行ってきました。無料電話相談会は、現在
+            年2回のペースで実施しています。相談を受けた事例の中から、健康管理手帳の取得や労災認定などの成果
+            を挙げてきました。
+          </p>
+          <p>
+            2010年6月には、中部電力の火力発電所で長年勤務し退職後にアスベストが原因で中皮腫に罹患して死
+            亡した方の遺族が、会社を相手取って損害賠償を求めた裁判において、解決金3500万円の支払い及び退職
+            者向けの弔慰金制度の創設等を内容とする画期的な和解を勝ち取りました。
+          </p>
+          <p>
+            その後も企業に対する損害賠償には継続して取り組んでいます。2023年9月27日に名古屋地裁におい
+            て、石綿曝露作業に従事して死亡した方について大同特殊鋼株式会社の子会社の責任を認める判決を勝ち
+            取りました。2023年9月28日には名古屋高裁において、石綿曝露作業に従事して死亡した方の遺族が会社
+            との間で相場より少額の賠償金を会社が支払うことで精算を行う旨の合意をした事案で当該合意を錯誤に
+            より無効であるとして1審に差し戻す判決がなされました。
+          </p>
+          <p>
+            労災申請についても、様々な事案に対応しています。相談日から遡って7年前に亡くなった労働者につい
+            て、当時の担当医からは病気についてアスベストが原因ではないと言われたことから、労災申請を諦めて
+            いた遺族から当弁護団が依頼を受け、石綿健康被害救済法（労災申請が時効となった方を対象とする救済
+            法）に基づく申請をしたところ、仕事を行っていた際に石綿に曝露したことが原因で死亡したと認めら
+            れ、特別遺族年金が受給できるようになった事例もあります。
+          </p>
+          <p>
+            そのほか、この間の泉南アスベスト訴訟の取組みを受けて創設されたいわゆる工場型の給付金制度、建
+            設アスベスト訴訟の取組みを受けて創設された建設アスベスト給付金制度についてもご相談をお受けし、
+            対応してきました。
+          </p>
+          <p>
+            2018年以降に集計した事件に限っても約80件の被害回復を実現し、被災者やご遺族の賠償金を受け取る
+            お手伝いをしてきました。弁護団としては、国家賠償請求、企業に対する損害賠償請求訴訟、労災申請、
+            石綿救済法に基づく申請、工場型の給付金請求（国に対する訴訟提起）、建設アスベスト給付金の申請、
+            健康管理手帳の取得支援などの活動をしています。
+          </p>
+          <p>
+            専門医に協力をいただく体制があり、医学的な問題に関しても対応しています。全国各地で被害者救済
+            に取り組む弁護団とも必要に応じて連携をとり、適切な事案対応に努めています。
+          </p>
+          <p>以上。</p>
         </div>
       </section>
 
@@ -912,7 +955,7 @@
                 </div>
               </div>
               <a
-                class="min-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px]"
+                class="min-w-max flex items-center gap-[1rem] bg-[#76b538] text-[#fff] py-[0.8rem] px-[1.6rem] rounded-[8px] hover:opacity-70 transition-all"
                 href="#contact-form"
               >
                 <i
@@ -975,7 +1018,13 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>補償を受けられる可能性があります。</p>
+                  <p>
+                    諸々の補償を受けるために一番重要なポイントは、いつ、どのような状況でアスベストにさらされたかです。発症したときに仕事をしていたか、退職していたかは、関係ありません。
+                  </p>
+                  <p>
+                    労災の場合であれば、労災保険に加入（特別加入を含む）していた際にアスベストにさらされたかが問題となりますし、国に給付金申請をする際には、従事した作業に応じた責任期間中にアスベストにさらされたかが問題となります。労災保険加入の事実がない場合や証明ができない場合は、石綿救済法の申請を検討することになります。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1051,7 +1100,18 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>
+                    労災の申請書には、事業主の証明を受ける欄がありますが、倒産などが理由で事業主の証明がなくても、労災認定を受けられることは珍しくありません。
+                  </p>
+                  <p>
+                    事業主の証明がなくても、年金記録や当時の同僚の証言から、労災保険加入時に業務をする上でアスベストにさらされたことを証明できれば、労災の認定を受けられます。
+                  </p>
+                  <p>
+                    当時の同僚が亡くなっているなどして証明してくれる人がいない場合には、実際にアスベストにさらされた状況を証明するのは難しいです。アスベストに曝された経験のある方は、お元気なうちから当時の同僚と連絡をとって、当時の状況についてのお話しを書類にまとめて証拠化するなどの工夫をしておくと良いでしょう。
+                  </p>
+                  <p>
+                    当弁護団では、将来の救済手続のための準備もお手伝いできます。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1082,7 +1142,13 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>できます。</p>
+                  <p>
+                    職場でアスベストにさらされた状況を証言してくれる方が見つかるなどして、改めて労災申請をして、労災認定が受けられるケースは珍しくありません。
+                  </p>
+                  <p>
+                    石綿救済法よりも労災の方が手厚い補償を受けられるので、石綿救済法の申請をしている方も、当時の同僚等が見つかったら、労災申請を検討すべきです。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1114,7 +1180,10 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>はい、できます。</p>
+                  <p>
+                    損害賠償請求や給金の請求は、損害賠償請求権や給付金の請求権を相続した人が請求することができます。したがって、配偶者や子の立場で請求が可能なことが多いです（厳密には遺言や遺産分割協議により誰が請求権を相続するかによって決まります）。ただし、労災や石綿救済法では、配偶者以外の子や親の立場では法定相続人であっても同居や生計を同一とする関係を要することがあります。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1145,7 +1214,16 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>
+                    労災支給決定等情報提供サービスの結果が「非該当」の場合でも、事情によっては給付金の対象となる可能性はあります。
+                  </p>
+                  <p>
+                    「労災支給決定等情報提供サービス」は、労災記録上の就労歴や石綿ばく露作業期間等に関する情報で該当・非該当を判断しているものです。そのため、労災の記録に表れていないものの、給付金の対象となる事情が立証できれば、給付金が受け取れる可能性がでてきます。
+                  </p>
+                  <p>
+                    私たちの弁護団では、これまでの経験と各地の弁護団とのネットワークを活かし、仕事の内容を詳しくお聞きして、給付金が受け取れるよう尽力します。
+                  </p>
+                  <p>まずはご相談ください。</p>
                 </div>
               </div>
             </div>
@@ -1174,7 +1252,10 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>はい、できます。</p>
+                  <p>
+                    私たちの弁護団では、数多くの労災認定や石綿救済法認定の実績がありますので、これらについてもサポートいたします。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1208,7 +1289,12 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>
+                    はい、できます。アスベストは建設現場以外でも工場や造船所など様々な現場で使用されています。
+                  </p>
+                  <p>
+                    私たちの弁護団では、アスベスト被害に関するどんなご相談にも対応しています。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1239,7 +1325,13 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>はい、できます。</p>
+                  <p>
+                    私たちの弁護団では、ご家族からの相談にも対応しています。
+                  </p>
+                  <p>
+                    被害者ご本人の仕事内容についてのメモ、年金記録（どの職場で年金に加入していたかが分かるので、どんな仕事を何年していたかがわかります）などを持ってきていただくと、助かります。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1270,7 +1362,12 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>
+                    建設アスベスト給付金（国からの給付金）の請求は訴訟（裁判）をする必要はなく、国に対し請求することで得られます。
+                  </p>
+                  <p>
+                    雇用先、建材メーカーへの賠償金は、多くの場合、裁判をすることが必要ですが、交渉で解決することもあります。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1301,7 +1398,9 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>
+                    必要書類の収集は事実関係を確認しながら一緒に進めていきます。自分で揃える必要はありません。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1332,7 +1431,9 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>
+                    両方ご依頼いただいても結構ですし、例えばご自身で建設アスベスト給付金の請求を行い、雇用先や建材メーカー訴訟については弁護団に依頼するということでも構いません。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1363,7 +1464,12 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>
+                    裁判には弁護士が出席します。皆様が裁判に出席する必要はありません。
+                  </p>
+                  <p>
+                    ただし、証人尋問等の場合には、法廷で話をして頂くことがあるかもしれません。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1392,7 +1498,13 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>相談料は無料です。</p>
+                  <p>
+                    ご依頼にあたって頂く費用については、料金表をご確認下さい。
+                  </p>
+                  <p>
+                    当弁護団は、皆様や皆様の親族等が辛いアスベスト被害にあったことを考慮し、できるだけ皆様に過度の負担にならないようにしています。
+                  </p>
                 </div>
               </div>
             </div>
@@ -1423,7 +1535,17 @@
                 <div
                   class="accordion-content bg-white p-[2rem] hidden space-y-[2rem]"
                 >
-                  <p>近日公開</p>
+                  <p>
+                    ご相談・依頼されるときには、石綿についての知識、石綿由来の病気に関する知識、建設現場の実態を把握しているかが重要なポイントになります。
+                  </p>
+                  <p>アスベストの場合、医学の知識が欠かせません。</p>
+                  <p>
+                    当弁護団は、15年以上アスベスト問題に関わってきた実績を有しています。
+                  </p>
+                  <p>
+                    また、石綿健康被害に詳しい医師と協力関係にあり、意見書等の作成依頼も可能です。
+                  </p>
+                  <p>安心してご相談、ご依頼下さい。</p>
                 </div>
               </div>
             </div>

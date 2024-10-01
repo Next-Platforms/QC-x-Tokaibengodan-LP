@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const footer = document.getElementById("footer");
-  footer.classList.add("1100:mb-[10rem]");
+  footer.classList.add("1100:mb-[13.5rem]");
 });
 
 window.addEventListener("scroll", function () {
