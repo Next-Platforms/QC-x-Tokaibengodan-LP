@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const confirmationForm = document.getElementById("confirmation-form");
+  const submitButton = confirmationForm.querySelector("button[type='submit']");
+  const goBackButton = document.getElementById("go-back-button");
 
   const savedData = JSON.parse(localStorage.getItem("contactFormData"));
 
@@ -21,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sendEmail(data) {
+    submitButton.disabled = true;
+    goBackButton.disabled = true;
     fetch("https://simple-proxy-taupe.vercel.app/api/sakura", {
       method: "POST",
       headers: {
@@ -40,6 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => {
         console.log("Error -->", error);
         alert("メール送信中にエラーが発生しました。");
+      })
+      .finally(() => {
+        submitButton.disabled = false;
+        goBackButton.disabled = false;
       });
   }
 
